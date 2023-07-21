@@ -1,7 +1,7 @@
 const url = require("url");
 const http = require("http");
 const fs = require("fs");
-const dotenv = require("dotenv");
+require("dotenv").config();
 
 const key = process.env.API_KEY;
 
