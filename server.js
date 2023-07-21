@@ -3,7 +3,7 @@ const http = require("http");
 const fs = require("fs");
 require("dotenv").config();
 
-const key = process.env.API_KEY;
+const key = process.env.API_KEY || "no key";
 
 const app = http.createServer((request, response) => {
     const url = request.url;
