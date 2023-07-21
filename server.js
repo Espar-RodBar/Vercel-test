@@ -13,7 +13,7 @@ const app = http.createServer((request, response) => {
             if (error) throw new Error("no file found");
             console.log("reading home root");
             console.log(typeof data, key);
-            const page = data.replace("<% txt %>", key);
+            const page = data.replace("<% txt %>", "key: " + key);
             console.log(page);
             response.end(page);
         });
