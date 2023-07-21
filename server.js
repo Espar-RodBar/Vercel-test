@@ -1,6 +1,7 @@
 const url = require("url");
 const http = require("http");
 const fs = require("fs");
+const dotenv = require("dotenv");
 
 const app = http.createServer((request, response) => {
     const url = request.url;
