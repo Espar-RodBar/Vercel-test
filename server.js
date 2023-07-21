@@ -3,6 +3,8 @@ const http = require("http");
 const fs = require("fs");
 require("dotenv").config();
 
+const PORT = 8000;
+
 const key = process.env.API_KEY || "no key";
 
 const app = http.createServer((request, response) => {
@@ -20,6 +22,6 @@ const app = http.createServer((request, response) => {
     }
 });
 
-app.listen("8000", "127.0.0.1", () => {
+app.listen(process.env.PORT || PORT, "localhost", () => {
     console.log("server listening......");
 });
