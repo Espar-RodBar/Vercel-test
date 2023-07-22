@@ -23,6 +23,6 @@ app.get("/", (request, response) => {
     });
 });
 
-app.listen(process.env.PORT || PORT, "localhost", () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log("server listening......");
 });
